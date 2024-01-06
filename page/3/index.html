@@ -1,0 +1,443 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>凌鸽技术博客 - std::cout &lt;&lt; &quot;凌鸽技术博客&quot; &lt;&lt; std::end;</title><meta name="author" content="LingGe"><meta name="copyright" content="LingGe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="凌鸽技术博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="凌鸽技术博客">
+<meta property="og:url" content="https://blog.pigeoooon.cool/page/3/index.html">
+<meta property="og:site_name" content="凌鸽技术博客">
+<meta property="og:description" content="凌鸽技术博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.pigeoooon.cool/imgs/logo.png">
+<meta property="article:author" content="LingGe">
+<meta property="article:tag" content="凌鸽">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.pigeoooon.cool/imgs/logo.png"><link rel="shortcut icon" href="/imgs/logo_circle.png"><link rel="canonical" href="https://blog.pigeoooon.cool/page/3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"AZ6QZBWBY1","apiKey":"b6dee0492e0c14d2f0d7150c8ca88e72","indexName":"Github博客搜索","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '凌鸽技术博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-01-06 18:21:36'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/imgs/loading.gif" data-lazy-src="/imgs/logo.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">61</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/imgs/bg-01.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="凌鸽技术博客"><img class="site-icon" src= "/imgs/loading.gif" data-lazy-src="/imgs/logo_circle.png"/><span class="site-name">凌鸽技术博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">凌鸽技术博客</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/204065248/" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="/204065248@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/3cf04c8c9ed3/" title="React - Mobx"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-099-e49c975191935e18c184419b7f374519.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React - Mobx"></a></div><div class="recent-post-info"><a class="article-title" href="/3cf04c8c9ed3/" title="React - Mobx">React - Mobx</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-20T16:18:00.000Z" title="发表于 2022-10-21 00:18:00">2022-10-21</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-29T10:19:04.846Z" title="更新于 2023-12-29 18:19:04">2023-12-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/React/">React</a></span></div><div class="content">Mobx介绍
+一个可以和React良好配合的集中状态管理工具，和Redux解决的问题相似，都可以独立组件进行集中状态管理
+
+
+优势
+简单，编写无模板的极简代码精准描述你的意图
+轻松实现最优渲染，依赖自动追踪，实现最小渲染优化
+架构自由，可移植, 可测试 无特殊心智负担
+
+配置开发环境
+Mobx是一个独立的响应式的库，可以独立于任何UI框架存在，但是通常大家习惯把它和React进行绑定使用，用Mobx来做响应式数据建模，React作为UI视图框架渲染内容，我们环境的配置需要三个部分1、一个create-react-app创建好的React项目环境2、mobx框架本身3、一个用来链接mobx和React的中间件
+12# 安装mobx和中间件工具 mobx-react-lite  只能函数组件中使用$ yarn add mobx mobx-react-lite
+
+基础使用
+1. 初始化mobx初始化步骤：1、定义数据状态state2、在构造器中实现数据响应式处理 makeAutoObservble3、定义修改数据的函数action4、实例化store并导出
+12345678910111213 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/bd0cdd8be799/" title="快捷启动"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-105-9f81ba6a20c05938527b152de8da13e4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="快捷启动"></a></div><div class="recent-post-info"><a class="article-title" href="/bd0cdd8be799/" title="快捷启动">快捷启动</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-13T16:04:00.000Z" title="发表于 2022-10-14 00:04:00">2022-10-14</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-01-06T06:41:02.431Z" title="更新于 2024-01-06 14:41:02">2024-01-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BA%94%E7%94%A8%E4%B8%8B%E8%BD%BD/">应用下载</a></span></div><div class="content">本页面为本人所制作软件下载页面，外传请标注来源。请勿修改本人软件版权，尊重他人劳动成果！谢谢！
+
+前言在写这款软件之前，一直使用的别人的软件。总体来说还是不错的，但是这段时间学习了Rust语言，所以决定自己写一款相同的软件。并且准备加上一些定制化内容，所以这款软件就诞生了。
+技术要点
+Rust语言 - 核心功能编写
+C++语言 - 动态库编写
+Vue3 - 界面UI编写
+Tauri框架 - 一款以WebView2为UI的跨平台框架
+anyhow&#x2F;thiserror - 异常处理
+tracing - 日志库
+Windows COM - 解析lnk文件
+
+注意事项
+本软件所启动的进程权限与当前软件权限一致，例如：QuickStart为管理员模式，则它所启动的进程也是管理员模式
+主题所使用的网络图片必须采用https方式，本地图标需放在软件同级目录下的cache&#x2F;background中
+软件当前不支持拖拽文件快捷添加，需要右键通过文件选择器打开。
+主题编写时需要遵守YAML文件规范，主题所有属性均支持CSS属性。
+当样式需要携带#号时，请使用双引号将值引起来。例如：”–q ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/06651e4f0047/" title="NIM_Duilib设置透明窗口"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-089-83f0667b3ee9998e2d3ab921695efeb1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NIM_Duilib设置透明窗口"></a></div><div class="recent-post-info"><a class="article-title" href="/06651e4f0047/" title="NIM_Duilib设置透明窗口">NIM_Duilib设置透明窗口</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-09-19T16:46:00.000Z" title="发表于 2022-09-20 00:46:00">2022-09-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-29T10:19:04.840Z" title="更新于 2023-12-29 18:19:04">2023-12-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C-C/">C/C++</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/C-C/NIM-Duilib/">NIM_Duilib</a></span></div><div class="content">在网易版本的duilib，如果需要透明窗口。则需要将Window标签的shadowattached属性设置为false。
+shadowattached属性1&lt;Attribute name=&quot;shadowattached&quot; default=&quot;true&quot; type=&quot;BOOL&quot; comment=&quot;窗口是否附加阴影效果,如(true)&quot;/&gt;
+
+它是一个窗口的属性。其值及意义如下：
+
+
+
+value
+作用
+
+
+
+true
+默认值，给窗口加上阴影背景
+
+
+false
+不会给窗口额外增加背景，此时窗体的背景为全透明
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/584dce545f37/" title="Python 脚本 - 文件编码批量转换"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-108-9bd107aa21b0f5c1e6fca40dcedbe396.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python 脚本 - 文件编码批量转换"></a></div><div class="recent-post-info"><a class="article-title" href="/584dce545f37/" title="Python 脚本 - 文件编码批量转换">Python 脚本 - 文件编码批量转换</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-09-16T16:59:00.000Z" title="发表于 2022-09-17 00:59:00">2022-09-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-29T10:19:04.845Z" title="更新于 2023-12-29 18:19:04">2023-12-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></span></div><div class="content">123456789101112131415161718192021222324252627282930313233343536373839404142434445464748# coding utf-8import osimport chardetdef find_all_file(path: str) -&gt; str:  for root, dirs, files in os.walk(path):    for f in files:      if f.endswith(&#x27;.h&#x27;):        fullname = os.path.join(root, f)        yield fullname      pass    pass  passdef judge_coding(path: str) -&gt; dict:  with open(path, &#x27;rb&#x27;) as f:    c = chardet.detect(f.read())  if c[&#x27;encoding&#x27;] != &#x27;UTF-8-S ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/d6a1b08fb7f1/" title="NIM_Duilib的MessageLoopProxy重定义问题"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-117-82e661a0e9ea31f44e9e0e362a0a4ed4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NIM_Duilib的MessageLoopProxy重定义问题"></a></div><div class="recent-post-info"><a class="article-title" href="/d6a1b08fb7f1/" title="NIM_Duilib的MessageLoopProxy重定义问题">NIM_Duilib的MessageLoopProxy重定义问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-09-16T15:56:00.000Z" title="发表于 2022-09-16 23:56:00">2022-09-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-29T10:19:04.839Z" title="更新于 2023-12-29 18:19:04">2023-12-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C-C/">C/C++</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/C-C/NIM-Duilib/">NIM_Duilib</a></span></div><div class="content">问题在使用NIM_Duilib的时候，会发现跟demo用的同一个库，却提示编译不通过，报错为如下信息：
+1ui_components.lib(stdafx.obj) : error LNK2005: &quot;public: void __thiscall nbase::MessageLoopProxy::PostTaskAndReplyRelay&lt;void __cdecl(void),void __cdecl(void)&gt;::Run(void)&quot; (?Run@?$PostTaskAndReplyRelay@$A6AXXZ$A6AXXZ@MessageLoopProxy@nbase@@QAEXXZ) 已经在 pch.obj 中定义
+
+解决方案将C&#x2F;C++的语言选项中的符合模式关闭即可。
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/ad874e1f5092/" title="DuiLib_Ultimate项目搭建"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-103-7c803962570ebdf98d9b4f26c0112c7c.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DuiLib_Ultimate项目搭建"></a></div><div class="recent-post-info"><a class="article-title" href="/ad874e1f5092/" title="DuiLib_Ultimate项目搭建">DuiLib_Ultimate项目搭建</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-30T18:21:00.000Z" title="发表于 2022-08-31 02:21:00">2022-08-31</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-29T10:19:04.838Z" title="更新于 2023-12-29 18:19:04">2023-12-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C-C/">C/C++</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/C-C/DuiLib-Ultimate/">DuiLib_Ultimate</a></span></div><div class="content">下载DuiLib_Ultimate库
+库链接：https://github.com/qdtroy/DuiLib_Ultimate
+下载后目录结构如下：
+编译生成库文件
+注意：本文只介绍静态库版本，动态库请看下方作者教程  
+
+
+ 
+
+
+
+升级项目打开项目后提示需要升级，那么这里点击确认即可升级完成后，项目结构如下图所示
+编译方式该项目有很多种编译方式，详情请看下表。
+
+
+
+编译模式
+描述
+
+
+
+Debug
+使用 Unicode 字符集Debug模式动态库版本
+
+
+DebugA
+使用多字节字符集Debug模式动态库版本
+
+
+Release
+使用 Unicode 字符集Release模式动态库版本
+
+
+ReleaseA
+使用多字节字符集Release模式动态库版本
+
+
+SDebug
+使用 Unicode 字符集Debug模式静态库版本
+
+
+SDebugA
+使用多字节字符集Debug模式静态库版本
+
+
+SRelease
+使用 Unicode 字符集Release模式静态库版本
+
+
+SReleaseA
+使用多字节字符集Release模式静态库版本
+
+
+编译&amp;归类我们将所有静态库版本均编 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/1b24b67c9282/" title="Sysrv-hello挖矿样本"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-109-c98ae4a10129ed3409a879ee701c55ea.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Sysrv-hello挖矿样本"></a></div><div class="recent-post-info"><a class="article-title" href="/1b24b67c9282/" title="Sysrv-hello挖矿样本">Sysrv-hello挖矿样本</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-16T18:02:00.000Z" title="发表于 2022-08-17 02:02:00">2022-08-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-29T10:19:04.852Z" title="更新于 2023-12-29 18:19:04">2023-12-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a></span></div><div class="content">概述
+该样本为Sysrv-hello挖矿样本，目前该病毒家族的漏洞利用模块已达20个。Sysrv-hello家族最早出现于2020年12月份，至今其版本迭代已数十次，不断的新增攻击模块，是一个新型且十分活跃的家族。
+挖矿程序的特征
+
+挖矿程序会占用CPU进行超频运算，导致CPU严重损耗，并且影响服务器上的其他应用。
+挖矿程序还具备蠕虫化特点，当安全边界被突破时，挖矿病毒会向内网渗透，并在被入侵的服务器上持久化驻留以获取最大收益。
+挖矿程序具有联动作用，在清理过程中会存在处理不及时或清理不干净导致挖矿病毒反复发生、出现恶意脚本替换系统命令的现象，从而导致执行系统命令时触发恶意脚本执行（例如：xorddos）。因此，需要在挖矿程序的一个执行周期内，尽快将被入侵服务器上的木马程序和持续化后门清理干净，否则容易导致挖矿病毒频繁复发。
+
+样本文件信息
+该样本为公司样本，故不提供相关特征。
+技术分析
+该样本使用随机IP对其进行端口扫描，如果端口开放则进行漏洞攻击
+漏洞利用模块列表
+JBOOS反序列化漏洞
+Supervisord远程命令执行漏洞（CVE-2017-11610）利用模块：
+Larave ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2d95d09a67d1/" title="Cobalt Strike样本的字符串特征"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-084-becd3b6661f843eddcac4fb8e27c6ad6.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Cobalt Strike样本的字符串特征"></a></div><div class="recent-post-info"><a class="article-title" href="/2d95d09a67d1/" title="Cobalt Strike样本的字符串特征">Cobalt Strike样本的字符串特征</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-16T13:49:00.000Z" title="发表于 2022-08-16 21:49:00">2022-08-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-29T10:19:04.850Z" title="更新于 2023-12-29 18:19:04">2023-12-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a></span></div><div class="content">
+字符串 MSSE-%d-server 模式.
+rdata头部的管道名格式：%c%c%c%c%c%c%c%c%cMSSE-%d-server
+
+https://www.anquanke.com/post/id/228123#h2-6https://blog.nviso.eu/2021/04/26/anatomy-of-cobalt-strike-dll-stagers/
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/3ab801940286/" title="vscode vue 自动格式化"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-116-edaccc22649b7c421d76ed8d316dfe25.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vscode vue 自动格式化"></a></div><div class="recent-post-info"><a class="article-title" href="/3ab801940286/" title="vscode vue 自动格式化">vscode vue 自动格式化</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-22T19:24:00.000Z" title="发表于 2022-07-23 03:24:00">2022-07-23</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-29T10:19:04.847Z" title="更新于 2023-12-29 18:19:04">2023-12-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/vue/">vue</a></span></div><div class="content">教程开始第一步，先打开vscode软件，方便快捷的方式就直接使用快捷键ctrl+,（是ctrl加逗号）唤出快速搜索条界面。
+
+第二步，接下来先设定自动保存文件，搜索框贴入files.autoSave筛出设置项，并把设置项属性选择为onFocuschange。
+
+第三步，设定编辑器默认代码格式化（美化）的插件为Prettier，同理在搜索设置框贴入editor.defaultFormatter，将配置项选择为Prettier。
+
+第四步，设定Prettier插件保存时自动格式化代码，搜索设置项贴入editor.formatOnSave，将如下图所示的选项框打钩即可。
+
+注意，注意，注意这样的效果是全局的，会使所有的文件都用这格式化，如果开启了其他项目，容易格式化冲突，打开你的setting.json,找到刚才的编辑设置，如下
+1&quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
+
+修改为
+123&quot;[vue]&quot;: &#123;  &quot;editor.defaultForma ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/be3e42984caa/" title="Hive勒索病毒样本分析报告"><img class="post-bg" src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-109-aabb832f807071382c1523ad28926720.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hive勒索病毒样本分析报告"></a></div><div class="recent-post-info"><a class="article-title" href="/be3e42984caa/" title="Hive勒索病毒样本分析报告">Hive勒索病毒样本分析报告</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-21T15:07:00.000Z" title="发表于 2022-07-21 23:07:00">2022-07-21</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-29T10:19:04.851Z" title="更新于 2023-12-29 18:19:04">2023-12-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a></span></div><div class="content">概述
+  Hive勒索病毒家族于2021年6月被首次发现，之后也保持着非常活跃的攻击趋势。同时hive也对自身进行了多次的版本更迭。本次样本为Rust语言的变异版本。  该hive病毒样本同样采用了非对称+对称算法的加密方案，但是在文件加密阶段使用的对称加密算法有别于主流加密方式。Hive在加密文件时并未采用标准的对称加密算法，如AES、DES、salsa20、RC4等，而是使用了自定义的流加密方式。
+名词解释
+该样本隶属于 Hive 家族。Hive家族通常通过钓鱼邮件，远程桌面协议，漏洞利用进行攻击。相关攻击工具：Cobalt Strike、Coroxy、ConnectWise Automate 端点管理漏洞等
+相关文件(IoCs)
+windows_x64_encrypt.exe：样本主程序MD5: 109652cfb3*9cdc0e4SHA1: 8c315_*_7d2519d70485965c5fSHA256: dac0e015c3669dcec**bd7fee51e87f193016ae529
+样本危害
+a. 重要文件无法读取b. 关键数据被损坏c. 被感染者需要通过缴纳高额赎金 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/imgs/loading.gif" data-lazy-src="/imgs/logo.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">LingGe</div><div class="author-info__description">凌鸽技术博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">61</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/204065248"><i class="fab fa-github"></i><span>个人 Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/204065248/" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="/204065248@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到凌鸽个人技术博客，最新站点迁移时间2023-12-27 18:01:07</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/d6e1402eafff/" title="CEF源码再编译支持MP4格式"><img src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-088-9773d4da697a9d18439f3a00da696292.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CEF源码再编译支持MP4格式"/></a><div class="content"><a class="title" href="/d6e1402eafff/" title="CEF源码再编译支持MP4格式">CEF源码再编译支持MP4格式</a><time datetime="2023-12-20T02:16:11.000Z" title="发表于 2023-12-20 10:16:11">2023-12-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/d53ab2e1b911/" title="解决代码自映射后无法调试 &amp; inline hook【Self-Remapping Code】"><img src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-108-f360a04759906324f24c34bc04a67338.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="解决代码自映射后无法调试 &amp; inline hook【Self-Remapping Code】"/></a><div class="content"><a class="title" href="/d53ab2e1b911/" title="解决代码自映射后无法调试 &amp; inline hook【Self-Remapping Code】">解决代码自映射后无法调试 &amp; inline hook【Self-Remapping Code】</a><time datetime="2023-12-14T06:59:06.000Z" title="发表于 2023-12-14 14:59:06">2023-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/8440ea58d27a/" title="UE4游戏PAK文件密钥寻找方法"><img src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-102-6be654c18d0698d9d58d4a45f4711a01.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UE4游戏PAK文件密钥寻找方法"/></a><div class="content"><a class="title" href="/8440ea58d27a/" title="UE4游戏PAK文件密钥寻找方法">UE4游戏PAK文件密钥寻找方法</a><time datetime="2023-12-08T07:30:42.000Z" title="发表于 2023-12-08 15:30:42">2023-12-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/5b9ba64b4793/" title="虚幻引擎PAK资源包汉化说明二"><img src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-097-d0733a4067ae0c57ef75010c976ce30f.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="虚幻引擎PAK资源包汉化说明二"/></a><div class="content"><a class="title" href="/5b9ba64b4793/" title="虚幻引擎PAK资源包汉化说明二">虚幻引擎PAK资源包汉化说明二</a><time datetime="2023-11-28T02:23:01.000Z" title="发表于 2023-11-28 10:23:01">2023-11-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/4a0302e0ddae/" title="PID控制器"><img src= "/imgs/loading.gif" data-lazy-src="https://pan.pigeoooon.cool/d/Alist%E5%9B%BE%E5%BA%8A/blog/2024/01/06/17-26-03-105-3059537f62bb6483aaed30e4db78e38f.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PID控制器"/></a><div class="content"><a class="title" href="/4a0302e0ddae/" title="PID控制器">PID控制器</a><time datetime="2023-11-28T02:06:11.000Z" title="发表于 2023-11-28 10:06:11">2023-11-28</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-C/"><span class="card-category-list-name">C/C++</span><span class="card-category-list-count">31</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-C/DuiLib-Ultimate/"><span class="card-category-list-name">DuiLib_Ultimate</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-C/MFC/"><span class="card-category-list-name">MFC</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-C/NIM-Duilib/"><span class="card-category-list-name">NIM_Duilib</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-C/Qt-5-14-2/"><span class="card-category-list-name">Qt 5.14.2</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-C/SOUI/"><span class="card-category-list-name">SOUI</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-C/%E5%B0%8F%E6%8A%80%E5%B7%A7/"><span class="card-category-list-name">小技巧</span><span class="card-category-list-count">22</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Rust/"><span class="card-category-list-name">Rust</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E8%B4%B4%E9%9D%A0%E5%B8%83%E5%B1%80/" style="font-size: 1.1em; color: #999">贴靠布局</a> <a href="/tags/Vue3/" style="font-size: 1.1em; color: #999">Vue3</a> <a href="/tags/LoadLibrary/" style="font-size: 1.1em; color: #999">LoadLibrary</a> <a href="/tags/Mac/" style="font-size: 1.1em; color: #999">Mac</a> <a href="/tags/MessageLoopProxy/" style="font-size: 1.1em; color: #999">MessageLoopProxy</a> <a href="/tags/UE4/" style="font-size: 1.3em; color: #99a1ac">UE4</a> <a href="/tags/%E6%A0%BC%E5%BC%8F%E5%8C%96/" style="font-size: 1.1em; color: #999">格式化</a> <a href="/tags/NIM-Duilib/" style="font-size: 1.5em; color: #99a9bf">NIM_Duilib</a> <a href="/tags/MarkDown/" style="font-size: 1.1em; color: #999">MarkDown</a> <a href="/tags/%E6%B1%89%E5%8C%96/" style="font-size: 1.1em; color: #999">汉化</a> <a href="/tags/DuiLib-Ultimate/" style="font-size: 1.1em; color: #999">DuiLib_Ultimate</a> <a href="/tags/%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A/" style="font-size: 1.1em; color: #999">双向绑定</a> <a href="/tags/1password/" style="font-size: 1.1em; color: #999">1password</a> <a href="/tags/QuickStart/" style="font-size: 1.1em; color: #999">QuickStart</a> <a href="/tags/CobaltStrike/" style="font-size: 1.1em; color: #999">CobaltStrike</a> <a href="/tags/Tauri/" style="font-size: 1.3em; color: #99a1ac">Tauri</a> <a href="/tags/%E9%A3%8E%E8%BD%A6%E5%8A%A8%E6%BC%AB/" style="font-size: 1.1em; color: #999">风车动漫</a> <a href="/tags/QueryPerformanceCounter/" style="font-size: 1.1em; color: #999">QueryPerformanceCounter</a> <a href="/tags/%E7%BA%BF%E7%A8%8B%E6%AD%BB%E9%94%81/" style="font-size: 1.1em; color: #999">线程死锁</a> <a href="/tags/%E5%88%B7%E9%82%80%E8%AF%B7/" style="font-size: 1.1em; color: #999">刷邀请</a> <a href="/tags/%E7%89%B9%E5%BE%81/" style="font-size: 1.1em; color: #999">特征</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 1.3em; color: #99a1ac">游戏</a> <a href="/tags/Rust/" style="font-size: 1.1em; color: #999">Rust</a> <a href="/tags/Milkdown/" style="font-size: 1.1em; color: #999">Milkdown</a> <a href="/tags/jsoncpp/" style="font-size: 1.3em; color: #99a1ac">jsoncpp</a> <a href="/tags/TEA%E5%8A%A0%E5%AF%86/" style="font-size: 1.1em; color: #999">TEA加密</a> <a href="/tags/Cobalt-Strike/" style="font-size: 1.1em; color: #999">Cobalt Strike</a> <a href="/tags/%E5%87%8C%E5%93%A5%E8%84%9A%E6%9C%AC%E8%BD%AF%E4%BB%B6/" style="font-size: 1.1em; color: #999">凌哥脚本软件</a> <a href="/tags/PAK/" style="font-size: 1.1em; color: #999">PAK</a> <a href="/tags/%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2/" style="font-size: 1.1em; color: #999">编码格式批量转换</a> <a href="/tags/dllmain/" style="font-size: 1.1em; color: #999">dllmain</a> <a href="/tags/%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8/" style="font-size: 1.1em; color: #999">快捷启动</a> <a href="/tags/vcpkg/" style="font-size: 1.1em; color: #999">vcpkg</a> <a href="/tags/vscode/" style="font-size: 1.1em; color: #999">vscode</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92/" style="font-size: 1.1em; color: #999">数据传递</a> <a href="/tags/libcurl/" style="font-size: 1.1em; color: #999">libcurl</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">多线程应用</a> <a href="/tags/QueryPerformanceFrequency/" style="font-size: 1.1em; color: #999">QueryPerformanceFrequency</a> <a href="/tags/SOUI/" style="font-size: 1.1em; color: #999">SOUI</a> <a href="/tags/OAuth/" style="font-size: 1.1em; color: #999">OAuth</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">61</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2018-12-31T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-01-06T10:21:36.546Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: #9c9c9c"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By LingGe</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎来到<a href="https://blog.pigeoooon.cool/">凌鸽个人技术博客</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["std::cout &#60;&#60;  凌鸽技术博客\" &#60;&#60; std::end;"])
+  } else {
+    document.getElementById("subtitle").textContent = "std::cout &#60;&#60;  凌鸽技术博客\" &#60;&#60; std::end;"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const findTrueUrl = (array) => {
+    Promise.all(array.map(item =>
+      fetch(item.url).then(resp => resp.json()).then(data => {
+        const urlArray = data.body.match(/(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/ig)
+        if (data.user.login === 'utterances-bot') {
+          return urlArray.pop()
+        } else {
+          return urlArray.shift()
+        }
+      })
+    )).then(res => {
+        array = array.map((i,index)=> {
+          return {
+            ...i,
+            url: res[index]
+          }
+        })
+
+        saveToLocal.set('github-newest-comments', JSON.stringify(array), 10/(60*24))
+        generateHtml(array)
+    });
+  }
+
+  const getComment = () => {
+    fetch('https://api.github.com/repos/204065248/204065248.github.io/issues/comments?sort=updated&direction=desc&per_page=6&page=1',{
+      "headers": {
+        Accept: 'application/vnd.github.v3.html+json'
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        const githubArray = data.map(item => {
+          return {
+            'avatar': item.user.avatar_url,
+            'content': changeContent(item.body_html),
+            'nick': item.user.login,
+            'url': item.issue_url,
+            'date': item.updated_at,
+            'githubUrl': item.html_url
+          }
+        })
+        findTrueUrl(githubArray)
+      }).catch(e => {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
+        }
+
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('github-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div></body></html>
